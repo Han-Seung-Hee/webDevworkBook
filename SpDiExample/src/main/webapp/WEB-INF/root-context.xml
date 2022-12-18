@@ -36,5 +36,5 @@
         <property name="mapperLocations" value="classpath:/mapper/**/*.xml"/>
     </bean>
 
-    <mybatis:scan base-package="com.example.spdiexample.mapper"></mybatis:scan>
+    <mybatis:scan base-package="com.example.spdiexample.mapper"/>
 </beans>
