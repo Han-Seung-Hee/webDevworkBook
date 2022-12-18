@@ -51,4 +51,11 @@ public class TodoController {
     public void ex6(){
         
     }
+
+    //Exception Test
+    @GetMapping("/ex7")
+    public void ex7(int p1, int p2){
+        log.info("p1......................." + p1);
+        log.info("p2......................." + p2);
+    }
 }
