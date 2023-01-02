@@ -35,15 +35,14 @@ public class TodoServiceImpl implements TodoService{
 
     }
 
-//    @Override
-//    public List<TodoDTO> getAll() {
-//
-//        List<TodoDTO> dtoList = todoMapper.selectAll().stream()
-//                .map(vo -> modelMapper.map(vo, TodoDTO.class))
-//                .collect(Collectors.toList());
-//
-//        return dtoList;
-//    }
+    @Override
+    public List<TodoDTO> getAll(){
+        List<TodoDTO> list = todoMapper.selectAll().stream()        //스트림 형태로 열기
+                .map(vo->modelMapper.map(vo,TodoDTO.class))         //요소 하나씩을 꺼내서 VO를 DTO로 변환
+                .collect(Collectors.toList());                      //List형태로 변환.
+
+        return list;
+    }
 
     @Override
     public TodoDTO getOne(Long tno) {

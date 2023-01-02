@@ -152,10 +152,10 @@ public class TodoController {
 
     @PostMapping("/modify")
     public String modify(
-                        PageRequestDTO pageRequestDTO,
-                        @Valid TodoDTO todoDTO,
-                         BindingResult bindingResult,
-                         RedirectAttributes redirectAttributes){
+            PageRequestDTO pageRequestDTO,
+            @Valid TodoDTO todoDTO,
+            BindingResult bindingResult,
+            RedirectAttributes redirectAttributes){
 
         if(bindingResult.hasErrors()) {
             log.info("has errors.......");
