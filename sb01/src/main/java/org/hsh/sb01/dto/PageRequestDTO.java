@@ -41,7 +41,7 @@ public class PageRequestDTO {
 
     private String link;
 
-    private String getLink(){
+    public String getLink(){
         if(this.link == null){
             StringBuilder builder = new StringBuilder();
 
