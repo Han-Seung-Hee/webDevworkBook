@@ -1,7 +1,8 @@
 package org.hsh.sb01.domain;
 
-import jakarta.persistence.*;
 import lombok.*;
+
+import jakarta.persistence.*;
 
 @Entity
 @Getter

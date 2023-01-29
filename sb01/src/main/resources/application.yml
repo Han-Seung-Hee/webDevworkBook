@@ -1,0 +1,34 @@
+logging:
+    level:
+        org:
+            hsh: debug
+            springframework: info
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: tmdgml12
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: xorhd1222
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
+
+# springdoc swagger
+springdoc:
+    version: '@springdoc.version@'
+    api-docs:
+        path: /docs
+
+    swagger-ui:
+        path: /swagger-ui
+        display-request-duration: true
+        groups-order: desc
+        operations-sorter: method
+        disable-swagger-default-url: true
+        use-root-path: true
+    cache:
+        disabled: true
